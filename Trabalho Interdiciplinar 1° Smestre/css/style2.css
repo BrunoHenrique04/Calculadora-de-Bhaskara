@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins.url);
+    
+}
+* {
+    color: #fff;
+}
+body {
+    background: #024059;
+    
+}
+
+.menu {
+    display: flex;
+    padding: 0 8.96% 0 8.96%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5.34%;
+
+    border-bottom: 5px solid #04BF8A;
+    background: #024059;
+}
+
+.logo-backal {
+    width: 223px;
+    height: 111px;
+    flex-shrink: 0;
+}
+
+.person-icon {
+    width: 47px;
+    height: 56.657px;
+    flex-shrink: 0;
+}
+
+.content {
+    display: flex;
+    padding: 0px 2.75%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.titulo1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+
+    width: 466px;
+    flex-shrink: 0;
+}
+
+.conteudo1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 48px */
+    width: 588px;
+    flex-shrink: 0;
+    
+}
+
+.nextBtn {
+
+    width: 223px;
+    height: 69px;
+    flex-shrink: 0;
+    
+    border-radius: 20px;
+    background: #04BF8A;
+}
+
+.conheca {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.imagemPessoa {
+    width: 578px;
+    height: 578px;
+    flex-shrink: 0;
+}

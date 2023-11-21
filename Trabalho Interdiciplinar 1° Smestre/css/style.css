@@ -1,0 +1,104 @@
+html {
+  font-size: 80%; /* 80% de 16px é 12,80px */
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins.url);
+    
+}
+* {
+    color: #fff;
+
+}
+body {
+    background: #024059;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.menu {
+    display: flex;
+    padding: 0rem 8.9375rem;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 5px solid #04BF8A;
+    background: #024059;
+}
+
+.logo-backal {
+    width: 13.9375rem;
+    height: 6.9375rem;
+}
+
+.person-icon {
+    width: 2.9375rem;
+    height: 3.54106rem;
+}
+
+.content {
+    display: flex;
+    padding: 0rem 7.875rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textos {
+    display: flex;
+    height: 39.9375rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.9375rem;
+}
+
+.titulo1 {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 3.6rem */
+
+    width: 29.125rem;
+    flex-shrink: 0;
+}
+
+.conteudo1 {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 3rem */
+    
+    width: 36.75rem;
+    flex-shrink: 0;
+    
+}
+
+.nextBtn {
+
+    width: 13.9375rem;
+    height: 4.3125rem;
+    flex-shrink: 0;
+    
+    border-radius: 1.25rem;
+    background: #04BF8A;
+}
+
+.conheca {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.imagemPessoa {
+    width: 40%;
+    height: 40%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
