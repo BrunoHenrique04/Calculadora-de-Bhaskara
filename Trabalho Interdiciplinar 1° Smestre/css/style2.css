@@ -1,0 +1,154 @@
+/*----------------------FORMATACAO GLOBAL-----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+html {
+  font-size: 80%; /* 80% de 16px é 12,80px */
+}
+
+* {
+    color: #fff;
+}
+
+body {
+    font-family: 'Inter' , Arial, Helvetica, sans-serif;
+    background: #024059;
+
+    background: linear-gradient(114deg, #024059 49.5%, #03648C 129.54%);
+}
+body, html, * {
+    padding: 0;
+    margin: 0;
+}
+/*--------------------------calculadora--------------------------------------*/
+.centerAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 13.9375rem;
+}
+.itensAlign {
+    display: flex;
+    width: 54.3125rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    
+}
+.calcAlign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5625rem;
+}
+
+.logo {
+    width: 13.875rem;
+    height: 6.875rem;
+}
+
+.calc {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.internFrame {
+    display: flex;
+    width: 35.125rem;
+    padding: 3.5625rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 3.75rem 4.8125rem;
+    flex-wrap: wrap;
+
+    border-radius: 1.25rem;
+    border-top: 12.5px solid #03A64B;
+    border-bottom: 12.5px solid #03A64B;
+    background: linear-gradient(179deg, #9AB6AE 20.78%, #FFF 111.25%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+    width: 13.9375rem;
+    height: 23.75rem;
+    flex-shrink: 0; 
+    border-radius: 0rem 0rem 1.5625rem 0rem;
+    background: #D9D9D9;    
+}
+
+/*---------------------calc itens----------------*/
+
+.x {
+    width: 8.4375rem;
+    height: 2.9375rem;
+    flex-shrink: 0;  
+
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+
+.btn {
+    width: 13.875rem;
+    height: 4.3125rem;
+    border-radius: 1.875rem;
+
+
+    border: 1px solid #000;
+    background: rgba(242, 242, 242, 0.80);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.btn::placeholder {
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+}
+
+.txt {
+    width: 30.75244rem;
+    height: 4.32981rem;
+    flex-shrink: 0;
+    color: #000;
+    
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration-line: underline;
+    
+}
+
+.calcBtn {
+    width: 22.426rem;
+    height: 6.16669rem;
+
+    border-radius: 1.25rem;
+    background: #03A64B;
+}
+
+.btnTxt {
+    
+    left: 3.2825rem;
+    top: 1.64669rem;
+
+    font-size: 2.25rem;
+    font-weight: 700;
+    
+}
+
+.info {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+
