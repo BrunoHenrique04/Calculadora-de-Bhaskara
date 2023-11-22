@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora</title>
     <link rel="stylesheet" href="css/style2.css">
-
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="centerAll">
@@ -15,12 +15,12 @@
                 <div class="logo"><img src="img/baskhaIcon.svg" alt=""></div>
 
                 <div class="internFrame">
-                    <span class="x">X1 = 0</span>
-                    <span class="x">X2 = 0</span>
-
-                    <input type="text" class="btn" placeholder="Digite A">
-                    <input type="text" class="btn" placeholder="Digite B">
-                    <input type="text" class="btn" placeholder="Digite C">
+                    <span class="x" id="x1Resp">X1 = 0</span>
+                    <span class="x" id="x2Resp">X2 = 0</span>
+                    
+                    <input type="text" class="btn" id="aValue" placeholder="Digite A">
+                    <input type="text" class="btn" id="bValue" placeholder="Digite B">
+                    <input type="text" class="btn" id="cValue" placeholder="Digite C">
 
                     <span class="txt">
                         Expressão aritimetica <br>
@@ -28,13 +28,13 @@
                         Valor delta <br>
                     </span>
 
-                    <button class="calcBtn"><span class="btnTxt">CALCULAR</span></button>
+                    <button class="calcBtn" onclick="bhaskara()"><span class="btnTxt">CALCULAR</span></button>
 
                 </div>
 
                 
             </div>
-            <div class="info">Informações</div>
+            <div class="info" id="info">Informações</div>
         </div>
     </div>
 </body>
