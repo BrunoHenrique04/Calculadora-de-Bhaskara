@@ -39,8 +39,8 @@ body, html, * {
 }
 
 .person-icon {
-    width: 2.9375rem;
-    height: 3.54106rem;
+    width: 1.96131rem;
+    height: 2.36431rem;
     flex-shrink: 0;
 }
 
@@ -91,6 +91,18 @@ body, html, * {
     background: #04BF8A;
 }
 
+.nextBtn:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #03a64a;
+  }
+  
+.nextBtn:hover {
+    color: #03a64a;
+    box-shadow: 0 0 10px #03a64a;
+    text-shadow: 0 0 10px #03a64a;
+  }
+  
+
 .conheca {
     color: #FFF;
     font-family: Inter;
@@ -131,8 +143,8 @@ body, html, * {
     display: flex;
     width: 46.94%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     gap: 0.625rem;
 }
 
@@ -146,7 +158,7 @@ body, html, * {
 
     width: 30rem;
     color: #000;
-    text-align: right;
+    text-align: left;
     
     font-size: 3rem;
     font-style: normal;
