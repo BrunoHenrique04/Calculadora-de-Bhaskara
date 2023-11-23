@@ -152,3 +152,45 @@ body, html, * {
     
 }
 
+.page2 {
+    margin-top: 5rem;
+    background: #03A64B;
+    width: 80%;
+    display: inline-flex;
+    padding: 1.125rem 10.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 3rem */
+}
+
+.louusa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 2rem 0 ;
+    
+}
+
+.louusa_texto {
+    border: solid 1rem #CB7246;
+    background-color: #068A50;
+    width: 90.375rem;
+    height: 56.125rem;
+    padding: 2rem;
+    
+
+    color: #000;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
