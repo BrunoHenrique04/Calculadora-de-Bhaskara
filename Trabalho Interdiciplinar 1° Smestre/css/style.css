@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 html {
-  font-size: 80%; /* 80% de 16px é 12,80px */
+  font-size: 70%; /* 80% de 16px é 12,80px */
 }
 
 * {
@@ -15,7 +15,6 @@ body {
     
     display: flex;
     flex-direction: column;
-    gap: 4.5rem;
 }
 body, html, * {
     padding: 0;
@@ -23,6 +22,7 @@ body, html, * {
 }
 /*----------------------MENU NAVEGACAO-----------------------------------*/
 .menu {
+    overflow: hidden;
     display: flex;
     padding: 0rem 8.9375rem;
     justify-content: space-between;
@@ -30,6 +30,9 @@ body, html, * {
 
     border-bottom: 5px solid #04BF8A;
     background: #024059;
+
+    position: sticky;
+    top: 0;
 }
 
 .logo-backal {

@@ -80,7 +80,6 @@ body, html, * {
 /*---------------------calc itens----------------*/
 
 .x {
-    width: 8.4375rem;
     height: 2.9375rem;
     flex-shrink: 0;  
 
@@ -114,7 +113,7 @@ body, html, * {
     
 }
 
-.txt {
+.txt  {
     width: 30.75244rem;
     height: 4.32981rem;
     flex-shrink: 0;
@@ -126,7 +125,9 @@ body, html, * {
     text-decoration-line: underline;
     
 }
-
+.txt:hover {
+    cursor: pointer;
+}
 .calcBtn {
     width: 22.426rem;
     height: 6.16669rem;
@@ -171,6 +172,7 @@ body, html, * {
     line-height: 120%; /* 3rem */
 }
 
+
 .louusa {
     display: flex;
     flex-direction: column;
@@ -183,14 +185,19 @@ body, html, * {
     border: solid 1rem #CB7246;
     background-color: #068A50;
     width: 90.375rem;
-    height: 56.125rem;
     padding: 2rem;
-    
-
-    color: #000;
+}
+.louusa_texto * {
+    color: #000000;
     font-family: Poppins;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+.xSideBySide {
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
 }
