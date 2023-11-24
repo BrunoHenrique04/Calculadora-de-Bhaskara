@@ -42,6 +42,7 @@ function bhaskara() {
     if( !a || !b || !c ) {
         // alert('inserir o valor de A, B, C')
          document.getElementById("info").innerHTML = 'inserir o valor de A, B, C.'
+         return
      } else if ( a == 0) {
        // alert('O valor de A, deve ser diferente de 0')
         document.getElementById("info").innerHTML = 'O valor de A, deve ser diferente de 0.'
@@ -101,4 +102,20 @@ function bhaskara() {
         $x2.innerHTML = "X2 = " + x2.toFixed(2)
 
     }
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Exibir o coach mark ao carregar a página
+    exibirCoachMark();
+});
+
+function exibirCoachMark() {
+    var coachMark = document.getElementById("coachMark");
+    coachMark.style.display = "block";
+}
+
+function fecharCoachMark() {
+    var coachMark = document.getElementById("coachMark");
+    coachMark.style.display = "none";
 }
