@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>calculadora</title>
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/style2.css">
     <script src="js/script.js" defer></script>
+    <link rel="shortcut icon" href="img/logoIcon.svg" type="image/x-icon">
 </head>
 <body>
 
@@ -19,51 +21,50 @@
     </div>
 
 
-    <div class="menu">
+    <nav class="menu">
         <div>
             <a href="index.html"><img class="logo-backal" src="img/baskhaIcon.svg" alt=""></a>
         </div>
         <div>
             <img class="person-icon" src="img/personicon.svg" alt="">
         </div>
-    </div>
+    </nav>
 
-    <div class="centerAll">
-        <div class="itensAlign">
-            <div class="calcAlign">
+    <div class="centerItens">
+        <div class="calcAlign">
 
-                <div class="logo"><img src="img/baskhaIcon.svg" alt=""></div>
+            <div class="logo"><img src="img/baskhaIcon.svg" alt=""></div>
 
-                <div class="internFrame">
-                    <span class="x" id="x1Resp">X1 = 0</span>
-                    <span class="x" id="x2Resp">X2 = 0</span>
-                    
-                    <input type="text" class="btn" id="aValue" placeholder="Digite A">
-                    <input type="text" class="btn" id="bValue" placeholder="Digite B">
-                    <input type="text" class="btn" id="cValue" placeholder="Digite C">
+            <div class="internFrame">
+                <span class="x" id="x1Resp">X1 = 0</span>
+                <span class="x" id="x2Resp">X2 = 0</span>
 
-                    <div class="txt">
-                        <span id="expArit" class="txt">Expressão aritimetica <br>
-                        <br>
-                        Valor delta</span> <br>
-                    </div>
+                <input type="text" class="btn" id="aValue" placeholder="Digite A">
+                <input type="text" class="btn" id="bValue" placeholder="Digite B">
+                <input type="text" class="btn" id="cValue" placeholder="Digite C">
 
-                    <button class="calcBtn" id="calcBtn"><span class="btnTxt">CALCULAR</span></button>
-
+                <div class="txt" id="expArit">
+                    Expressão aritimetica <br>
+                    <br>
+                    Valor delta <br>
                 </div>
-                
+
+                <button class="calcBtn" id="calcBtn"><span class="btnTxt">CALCULAR</span></button>
+
             </div>
-            <div class="info" id="info">Informações</div>
+
         </div>
+        <div class="info" id="info">Informações</div>
     </div>
+
     <div class="page2" id="page2">
         Não Entende de Baskara e Equaçoes de Segundo Grau <br>
         <br>
         A gente te Explica!
     </div>
 
-    <div class="louusa">
-        <div class="louusa_texto">
+    <div class="lousa">
+        <div class="lousa_texto">
             <div id="textoLousa">
                 EXECUTE UMA CALCULO PARA TER SEU PASSO A PASSO
             </div>

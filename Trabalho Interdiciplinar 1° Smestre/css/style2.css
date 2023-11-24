@@ -1,24 +1,8 @@
 /*----------------------FORMATACAO GLOBAL-----------------------------------*/
+@import url('style.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-html {
-  font-size: 70%; /* 80% de 16px é 12,80px */
-}
 
-* {
-    color: #fff;
-}
-
-body {
-    font-family: 'Inter' , Arial, Helvetica, sans-serif;
-    background: #024059;
-
-    background: linear-gradient(114deg, #024059 49.5%, #03648C 129.54%);
-}
-body, html, * {
-    padding: 0;
-    margin: 0;
-}
 /*-------------------------COACHMARK-----------------------------------------*/
 .coach-mark {
     position: fixed;
@@ -51,21 +35,18 @@ body, html, * {
 
 
 /*--------------------------calculadora--------------------------------------*/
-.centerAll {
+
+.centerItens {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin-left: 13.9375rem;
-}
-.itensAlign {
-    display: flex;
-    width: 54.3125rem;
-    justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
-    
+
+
 }
 .calcAlign {
+    margin-right: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,18 +74,20 @@ body, html, * {
     gap: 3.75rem 4.8125rem;
     flex-wrap: wrap;
 
+
+
     border-radius: 1.25rem;
-    border-top: 12.5px solid #03A64B;
-    border-bottom: 12.5px solid #03A64B;
+    border-top: 0.881rem solid #03A64B;
+    border-bottom: 0.881rem solid #03A64B;
     background: linear-gradient(179deg, #9AB6AE 20.78%, #FFF 111.25%);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .info {
     width: 13.9375rem;
     height: 23.75rem;
     flex-shrink: 0; 
-    border-radius: 0rem 0rem 1.5625rem 0rem;
+    border-radius: 0 0 1.5625rem 0;
     background: #D9D9D9;    
 }
 
@@ -128,7 +111,7 @@ body, html, * {
 
     border: 1px solid #000;
     background: rgba(242, 242, 242, 0.80);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
     color: #000;
     text-align: center;
@@ -196,7 +179,6 @@ body, html, * {
 
     color: #FFF;
     text-align: center;
-    font-family: Poppins;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
@@ -204,28 +186,42 @@ body, html, * {
 }
 
 
-.louusa {
+.lousa {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2rem 0 2rem 0 ;
-    
+}
+.lousa * {
+    vertical-align: top;
 }
 
-.louusa_texto {
+.lousa_texto {
     border: solid 1rem #CB7246;
     background-color: #068A50;
     width: 90.375rem;
     padding: 2rem;
 }
-.louusa_texto * {
+.lousa_texto * {
     color: #000000;
-    font-family: Poppins;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
 }
+
+.fracao {
+    display: inline-block;
+    text-align: center;
+}
+
+.fracao hr {
+    width: 100%;
+    margin: 0;
+    border: 1px solid black;
+}
+
 .xSideBySide {
     width: 100%;
     
@@ -244,3 +240,4 @@ body, html, * {
 .calcBtn:hover {
     filter: brightness(70%);
   }
+

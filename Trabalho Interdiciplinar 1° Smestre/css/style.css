@@ -55,15 +55,16 @@ body, html, * {
     align-items: center;
 }
 
-.textos {
+.content_txtAlign {
     display: flex;
     height: 39.9375rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.9375rem;
+    margin-top: 2rem;
 }
 
-.titulo1 {
+.titulo {
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
@@ -73,7 +74,7 @@ body, html, * {
     flex-shrink: 0;
 }
 
-.conteudo1 {
+.conteudo {
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
@@ -126,16 +127,9 @@ body, html, * {
 }
 
 /*----------------------------------RODAPE -----------------------------------*/
-.rodape {
-    background: #04BF8A;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .container {
+    background: #04BF8A;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 1.5625rem;
@@ -143,46 +137,19 @@ body, html, * {
 }
 
 .textoRodape {
+    padding: 3rem 0.625rem;
     display: flex;
     width: 46.94%;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     gap: 0.625rem;
-}
 
-.textoFormatacao {
-    display: flex;
-    width: 31.25rem;
-    padding: 3rem 0.625rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-
-    width: 30rem;
     color: #000;
     text-align: left;
-    
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 3.6rem */
-}
 
-
-.imagemRodape {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.625rem;
-    flex: 1 0 0;
-    align-self: stretch;
-}
-
-.imgRodape {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 0;
-    align-self: stretch;
 }
