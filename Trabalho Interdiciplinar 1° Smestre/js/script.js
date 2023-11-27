@@ -1,41 +1,54 @@
+// ----------------------------VARIAVEIS----------------------------------------
+let a = document.querySelector('#aValue').value
+let b = document.querySelector('#bValue').value
+let c = document.querySelector('#cValue').value
 const x1resp = document.querySelector('#x1Resp')
 const x2resp = document.querySelector('#x2Resp')
-const expressao = document.querySelector('#expArit'); 
-const page2 = document.querySelector('#page2')
 const calcBtn = document.querySelector('#calcBtn');
-const textoLousa = document.querySelector('#textoLousa');
-const x1Pos = document.querySelector('#x1Pos');
-const x2Pos = document.querySelector('#x2Pos');
+const deltaLousa = document.querySelector('#deltaLousa');
+const baskLousa = document.querySelector('#baskLousa');
+const calcX1Position = document.querySelector('#x1Pos');
+const calcX2Position = document.querySelector('#x2Pos');
 const xResp = document.querySelector('#xResp');
+const express = document.querySelector('#express');
+const delt = document.querySelector('#delta');
+const logo = document.querySelector('#logo');
 
-
-calcBtn.addEventListener('click', bhaskara)
-
-expressao.addEventListener('click', () => {
-    console.log("scroll");
-
+delt.addEventListener('click', () => {
     // Obtém a posição da div em relação à janela
-    let posicaoDiv = page2.getBoundingClientRect().y;
+    let deltaLousaPos = deltaLousa.getBoundingClientRect().y;
 
     // Rola até a div, considerando a posição atual
     window.scrollBy({ 
-        top: posicaoDiv - 100, // Ajusta para cima 100 pixels
+        top: deltaLousaPos - 100, // Ajusta para cima 100 pixels
+        behavior: 'smooth' //suave
+    });
+})
+
+express.addEventListener('click', () => {
+    // Obtém a posição da div em relação à janela
+    let baskLousaPos = baskLousa.getBoundingClientRect().y;
+
+    // Rola até a div, considerando a posição atual
+    window.scrollBy({
+        top: baskLousaPos, // Ajusta para cima 100 pixels
         behavior: 'smooth' //suave
     });
 })
 
 
+calcBtn.addEventListener('click', bhaskara)
 function bhaskara() {
-    const a = document.querySelector('#aValue').value
-    const b = document.querySelector('#bValue').value
-    const c = document.querySelector('#cValue').value
+    a = document.querySelector('#aValue').value
+    b = document.querySelector('#bValue').value
+    c = document.querySelector('#cValue').value
 
     document.getElementById('info').innerHTML = "Informações";
     x1resp.innerHTML = "X1 = 0";
     x2resp.innerHTML = "X2 = 0";
-    textoLousa.innerHTML = 'EXECUTE UMA CALCULO PARA TER SEU PASSO A PASSO'
-    x1Pos.innerHTML = ''
-    x2Pos.innerHTML = ''
+    deltaLousa.innerHTML = 'Os valores de A, B e C não foram informados'
+    calcX1Position.innerHTML = ''
+    calcX2Position.innerHTML = ''
 
     if( !a || !b || !c ) {
         // alert('inserir o valor de A, B, C')
@@ -52,30 +65,41 @@ function bhaskara() {
      if ( delta < 0 ) {
        // alert('Sem raízes reais')
         document.getElementById("info").innerHTML = 'O delta é negativo. Equação não possui raízes reais.'
-        textoLousa.innerHTML = `
-        Δ = B² -4 * A * C. <br/>
-        Δ = ${b}² -4 * ${a} * ${c}. <br/>
-        Δ = ${b * b} -4 * ${a} * ${c}. <br/>
-        Δ = ${b * b} -4 * ${a * c}. <br/>
-        Δ = ${b * b} ${-4 * (a * c)}. <br/>
-        Δ = ${(b * b) -4 * (a * c)}. <br/>
-        ` 
+            exibirDelta();
     }
     else {
+
         let raizDelta = Math.sqrt(delta)
          raizDelta = parseFloat(raizDelta.toFixed(2))
         const x1 = ( -b + Math.sqrt(delta)) / ( 2 *a )
         const x2 = ( -b - Math.sqrt(delta)) / ( 2 *a )
-        textoLousa.innerHTML = `
-        CALCULO DO DELTA: <br/>
+         console.log(raizDelta)
+         exibirDelta()
+         exibirBaskhara(delta, raizDelta, x1, x2)
+
+    }
+}
+
+function exibirDelta() {
+    document.querySelector('#delta').innerHTML = `Δ = ${(b * b) -4 * (a * c)}`;
+    deltaLousa.innerHTML = `
+        CALCULO DO DELTA <br/>
         Δ = B² -4 * A * C. <br/>
         Δ = ${b}² -4 * ${a} * ${c}. <br/>
         Δ = ${b * b} -4 * ${a} * ${c}. <br/>
         Δ = ${b * b} -4 * ${a * c}. <br/>
         Δ = ${b * b} ${-4 * (a * c)}. <br/>
         Δ = ${(b * b) -4 * (a * c)}. <br/>
+        `
+}
+
+function exibirBaskhara(delta, raizDelta, x1, x2) {
+    document.querySelector('#express').innerHTML = `
+    ${a}x² ${b < 0 ? `${b}` : `+ ${b}`}x + ${c} = 0`;
+
+    baskLousa.innerHTML = `
         <hr>
-        CALCULO DA BASKHARA: <br/>
+        <span> CALCULO DA BASKHARA: </span> <br/>
         X = <span class="fracao"> -B ± √Δ <hr> 2 * A </span> <br/>
         ${b < 0 ? `
             X = <span class="fracao"> -(${b}) ± √${delta} <hr> 2 * ${a} </span> <br/>
@@ -87,33 +111,37 @@ function bhaskara() {
         
         X = <span class="fracao"> ${-b} ± ${raizDelta} <hr> ${2 * a} </span><br/>  `
 
-        x1Pos.innerHTML = `
+    calcX1Position.innerHTML = `
         X1 = <span class="fracao"> ${-b} + ${raizDelta} <hr> ${2 * a} </span><br/>
         X1 = <span class="fracao"> ${-b + raizDelta} <hr> ${2 * a} </span><br/>
         X1 = <span class="fracao"> ${x1.toFixed(2)} </span><br/>`
 
-        x2Pos.innerHTML = `
+    calcX2Position.innerHTML = `
         X2 = <span class="fracao">  ${-b} - ${raizDelta} <hr> ${2 * a} </span><br/>
         X2 = <span class="fracao"> ${-b - raizDelta} <hr> ${2 * a} </span><br/>
         X2 = <span class="fracao">  ${x2.toFixed(2)} </span><br/>`
 
-        xResp.innerHTML = `
+    xResp.innerHTML = `
         <br/>
         X1 = ${x1.toFixed(2)} <br/>
         X2 = ${x2.toFixed(2)} <br/>
         `
-
-
-         x1resp.innerHTML = "X1 = " + x1.toFixed(2)
-         x2resp.innerHTML = "X2 = " + x2.toFixed(2)
-
-    }
+    x1resp.innerHTML = "X1 = " + x1.toFixed(2)
+    x2resp.innerHTML = "X2 = " + x2.toFixed(2)
 }
-
 
 document.addEventListener("DOMContentLoaded", function () {
     // Exibir o coach mark ao carregar a página
     exibirCoachMark();
+
+    // Obtém a posição da div em relação à janela
+    let logoPos = logo.getBoundingClientRect().y;
+
+    // Rola até a div, considerando a posição atual
+    window.scrollBy({
+        top: logoPos, // Ajusta para cima 100 pixels
+        behavior: 'smooth' //suave
+    });
 });
 
 function exibirCoachMark() {

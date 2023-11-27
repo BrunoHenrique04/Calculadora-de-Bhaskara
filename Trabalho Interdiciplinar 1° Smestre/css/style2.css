@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /*-------------------------COACHMARK-----------------------------------------*/
+.menu {
+    position: relative;
+}
 .coach-mark {
     position: fixed;
     top: 50%;
@@ -21,7 +24,7 @@
 .coach-mark * {
      color: #000;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
 }
 
@@ -84,7 +87,8 @@
 }
 
 .info {
-    width: 13.9375rem;
+    padding: 1rem;
+    width: 14.9375rem;
     height: 23.75rem;
     flex-shrink: 0; 
     border-radius: 0 0 1.5625rem 0;
@@ -139,6 +143,18 @@
     text-decoration-line: underline;
     
 }
+.txt * {
+    width: 30.75244rem;
+    height: 4.32981rem;
+    flex-shrink: 0;
+    color: #000;
+
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
 .txt:hover {
     cursor: pointer;
 }
@@ -170,9 +186,9 @@
 .page2 {
     margin-top: 5rem;
     background: #03A64B;
-    width: 80%;
+    width: 100%;
     display: inline-flex;
-    padding: 1.125rem 10.25rem;
+    padding: 1.125rem 0;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
@@ -182,7 +198,8 @@
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 3rem */
+    line-height: 90%; /* 3rem */
+
 }
 
 
@@ -200,26 +217,31 @@
     border: solid 1rem #CB7246;
     background-color: #068A50;
     width: 90.375rem;
-    padding: 2rem;
+    padding: 3rem;
 }
 .lousa_texto * {
-    color: #000000;
-    font-size: 2.5rem;
+    color: #ffffff;
+    font-size: 2.0rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
 
 }
 
 .fracao {
     display: inline-block;
     text-align: center;
+
+}
+#fracao {
+ margin-top: 3rem;
 }
 
 .fracao hr {
     width: 100%;
     margin: 0;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .xSideBySide {

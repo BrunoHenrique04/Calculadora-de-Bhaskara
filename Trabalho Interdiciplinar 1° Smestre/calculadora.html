@@ -13,9 +13,8 @@
 <body>
 
     <div class="coach-mark" id="coachMark">
-        <p>O processo para calcular baskhara pode ser meio cansativo as vezes, 
-            então criamos essa calculadora para facilitar sua vida, aonde a unica coisa que você precisa é saber
-            o valor de A, B e C.
+        <p>
+            Aqui vai uma dica: Após o calculo você pode clicar sobre a equação para ver o passo a passo do calculo
         </p>
         <button onclick="fecharCoachMark()">Fechar</button>
     </div>
@@ -33,7 +32,7 @@
     <div class="centerItens">
         <div class="calcAlign">
 
-            <div class="logo"><img src="img/baskhaIcon.svg" alt=""></div>
+            <div class="logo" id="logo"><a href="index.html"><img src="img/baskhaIcon.svg" alt=""></a></div>
 
             <div class="internFrame">
                 <span class="x" id="x1Resp">X1 = 0</span>
@@ -44,9 +43,9 @@
                 <input type="text" class="btn" id="cValue" placeholder="Digite C">
 
                 <div class="txt" id="expArit">
-                    Expressão aritimetica <br>
+                    <span id="express">Expressão aritimetica</span> <br>
                     <br>
-                    Valor delta <br>
+                    <span id="delta">Valor delta</span> <br>
                 </div>
 
                 <button class="calcBtn" id="calcBtn"><span class="btnTxt">CALCULAR</span></button>
@@ -58,15 +57,18 @@
     </div>
 
     <div class="page2" id="page2">
-        Não Entende de Baskara e Equaçoes de Segundo Grau <br>
-        <br>
+        Não Entende de Baskara e Equaçoes de Segundo Grau ?! <br/>
+        <br/>
         A gente te Explica!
     </div>
 
     <div class="lousa">
         <div class="lousa_texto">
-            <div id="textoLousa">
-                EXECUTE UMA CALCULO PARA TER SEU PASSO A PASSO
+            <div id="deltaLousa">
+                Os valores de A, B e C não foram informados
+            </div>
+            <div id="baskLousa">
+
             </div>
             <div class="xSideBySide">
                 <div id="x1Pos">
