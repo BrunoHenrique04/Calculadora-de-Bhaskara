@@ -154,3 +154,97 @@ body, html, * {
     line-height: 120%; /* 3.6rem */
 
 }
+
+.dropdown-content {
+
+}
+
+.dropdownImage {
+    width: 14.25rem;
+    height: 14.25rem;
+    flex-shrink: 0;
+}
+
+.drpDownTexto {
+    width: 23.8125rem;
+    height: 13rem;
+    flex-shrink: 0;
+
+    color: #000;
+    text-align: center;
+
+    /* Titulos POP-UP */
+
+    font-size: 2.0rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 3rem */
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background: url("../img/personicon.svg") no-repeat;
+    background-size: contain;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #024059;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; /* Position it below the button */
+    right: 0; /* Align it with the left edge of the button */
+    display: none;
+    width: 23.5rem;
+    height: 22.5625rem;
+    padding: 0rem 2.8125rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 1.875rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Show the dropdown menu when the "show" class is present */
+.dropdown-content.show {
+    display: inline-flex;
+
+}
+
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: inline-flex;
+
+}
