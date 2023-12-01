@@ -1,11 +1,11 @@
-const dropDownBtn = document.querySelector('#dropDownBtn');
+const dropDownBtn = document.querySelector('#dropDownBtn'); //armazena o botão do dropdown em uma variavel
 
 dropDownBtn.addEventListener('click', dropDown)
 function dropDown() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").classList.toggle("show"); // altera a classe do dropdown para conseguir exibilo
 }
 
-// Close the dropdown menu if the user clicks outside of it
+// fecha o dropdown caso seja clicado na parte de fora dele
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         let dropdowns = document.getElementsByClassName("dropdown-content");
@@ -13,11 +13,12 @@ window.onclick = function(event) {
         for (i = 0; i < dropdowns.length; i++) {
             let openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+                openDropdown.classList.remove('show'); //remove a classe que exibe o dropdown fazendo ele voltar a se tornar invisivel
             }
         }
     }
 }
+// fecha o dropdown caso a tela seja delizada
 window.addEventListener("scroll", ()=> {
 
         let dropdowns = document.getElementsByClassName("dropdown-content");
@@ -25,7 +26,7 @@ window.addEventListener("scroll", ()=> {
         for (i = 0; i < dropdowns.length; i++) {
             let openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+                openDropdown.classList.remove('show');//remove a classe que exibe o dropdown fazendo ele voltar a se tornar invisivel
             }
         }
 

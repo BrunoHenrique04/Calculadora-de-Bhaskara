@@ -109,8 +109,8 @@ function exibirBaskhara(delta, raizDelta, x1, x2) {
     baskLousa.innerHTML = `
         <hr>
         <span> CALCULO DA BASKARA: </span> <br/>
-        X = <span class="fracao"> -B ± √Δ <hr> 2 * A </span> <br/>
-        ${b < 0 ? `
+        X = <span class="fracao"> -B ± √Δ <hr> 2 * A </span> <br/> <!-- Verifica se b é menor que 0, caso seja adiciona  colchetes na exibição -->
+        ${b < 0 ? ` 
             X = <span class="fracao"> -(${b}) ± √${delta} <hr> 2 * ${a} </span> <br/>
             X = <span class="fracao"> -(${b}) ± √${delta} <hr> 2 * ${a} </span><br/>
         ` : `
