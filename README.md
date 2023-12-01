@@ -1,7 +1,7 @@
 # Documentação do Código
 
 ## Estrutura de Arquivos
-
+- **<a href="https://github.com/AndrowDev/Programacao-Web-ETEC/tree/97c5f5f934e844e31e2addc588e2bfbbc1939285/Trabalho%20Interdiciplinar%201%C2%B0%20Semestre%20ETEC%20-%20HAS">Trabalho Interdiciplinar 1° Semestre ETEC - HAS</a> Diretório do projeto.
 - **index.html:** Página principal da aplicação.
 - **calculadora.html:** Página da calculadora de equação de segundo grau.
 - **script.js:** Script JavaScript para a lógica da calculadora e interações.
