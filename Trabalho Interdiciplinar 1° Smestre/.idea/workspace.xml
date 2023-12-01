@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e107bfd-0b59-4b89-bad0-bf1d228f021a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/trabalho de baskhara la/FileContentIndex/8ba5ec09-b852-4616-800a-9336c4f36748.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/trabalho de baskhara la/FileContentIndex/b5d18778-27fd-41e8-84fc-05c2058ca234.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/trabalho de baskhara la/v17/.wsuo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentacao.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculadora.html" beforeDir="false" afterPath="$PROJECT_DIR$/calculadora.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Poppins.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/poppins.url" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documentacao.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +69,7 @@
       <workItem from="1701049518891" duration="4386000" />
       <workItem from="1701054058856" duration="3343000" />
       <workItem from="1701114872149" duration="135000" />
+      <workItem from="1701453322658" duration="1589000" />
     </task>
     <servers />
   </component>

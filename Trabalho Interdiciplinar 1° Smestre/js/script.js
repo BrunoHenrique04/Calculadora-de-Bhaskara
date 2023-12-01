@@ -141,13 +141,16 @@ function exibirBaskhara(delta, raizDelta, x1, x2) {
 //reseta os campos
 function resetarCampos() { // limpa todos os campos
     document.getElementById('info').innerHTML = "Informações";
+    baskLousa.textContent = "";
     x1resp.innerHTML = "X1 = 0";
     x2resp.innerHTML = "X2 = 0";
     deltaLousa.innerHTML = 'Os valores de A, B e C não foram informados'
     calcX1Position.innerHTML = ''
     calcX2Position.innerHTML = ''
+    xResp.textContent = ""
 }
-//PopUp de dica quando carregar o documento
+
+//PopUp de dica quando carregar o documento e auto scrool para a calculadora
 document.addEventListener("DOMContentLoaded", function () {
     // Exibir o coach mark ao carregar a página
     exibirCoachMark();
