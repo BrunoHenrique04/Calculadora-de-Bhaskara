@@ -1,4 +1,4 @@
-# Calculadora de bhaskara
+# Calculadora de bhaskara 
 ## Desenvolvedores do Projeto
 - <a href="https://github.com/BradKynndy">Brad </a>
 - <a href="https://github.com/BrunoHenrique04">Bruno </a>
